@@ -1,0 +1,62 @@
+/* Reset and prevent overflow globally */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+  font-family: sans-serif;
+}
+
+/* Layout container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Sidebar text & nav */
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #fff;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Typography */
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
